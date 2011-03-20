@@ -21,9 +21,9 @@ public final class R {
         public static final int hunger=0x7f050008;
         public static final int mood=0x7f050009;
         public static final int play=0x7f050003;
-        public static final int stats=0x7f050005;
+        public static final int stats=0x7f050004;
         public static final int widget32=0x7f050000;
-        public static final int widget35=0x7f050004;
+        public static final int widget35=0x7f050005;
     }
     public static final class layout {
         public static final int main=0x7f030000;

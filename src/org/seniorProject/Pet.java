@@ -61,6 +61,7 @@ public class Pet extends Activity {
 		final Button button_feed = (Button) findViewById(R.id.feed);
 		final Button button_play = (Button) findViewById(R.id.play);
 		final Button button_clean = (Button) findViewById(R.id.clean);
+		final Button button_stats = (Button) findViewById(R.id.stats);
 		
 		 button_feed.setOnClickListener(new View.OnClickListener() {
 	            public void onClick(View v) {
@@ -86,6 +87,16 @@ public class Pet extends Activity {
 	            public void onClick(View v) {
 	            	try {
 						executeHttpPost(api_key, "clean", email, null);
+						updatePetData();
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+	            }
+	        });
+		 
+		 button_stats.setOnClickListener(new View.OnClickListener() {
+	            public void onClick(View v) {
+	            	try {
 						updatePetData();
 					} catch (Exception e) {
 						e.printStackTrace();

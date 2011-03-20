@@ -32,6 +32,15 @@ android:layout_below="@+id/clean"
 android:layout_alignParentLeft="true"
 >
 </Button>
+<Button
+android:id="@+id/stats"
+android:layout_width="127px"
+android:layout_height="wrap_content"
+android:text="Update Stats"
+android:layout_below="@+id/play"
+android:layout_alignParentLeft="true"
+>
+</Button>
 <LinearLayout
 android:id="@+id/widget35"
 android:layout_width="319px"
